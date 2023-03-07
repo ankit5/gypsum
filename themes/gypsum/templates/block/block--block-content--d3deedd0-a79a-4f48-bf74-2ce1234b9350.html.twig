@@ -1,0 +1,30 @@
+<div{{ attributes }}>
+   {{ title_prefix }}
+  {% if label %}
+    <h2 class="visually-hidden"></h2>
+  {% endif %}
+  {% block content %}
+<section class="video-w-content-area">
+        <div class="container">
+            <div class="video-w-content-wrapper">
+                <div class="content">
+                    <h3>{{ label }}</h3>
+                    <p>{{ content.body }}</p>
+                    <a href="{% spaceless %}{{ content.field_url|escape|striptags('<!-- -->') }}{% endspaceless %}" class="btn">Learn More</a>
+                </div>
+                <div class="video-box active" id="videoBox1">
+                    <video id="video1" controls>
+                        <source src="{{ base_path ~ directory }}/img/lorem-psum-video.mp4" type="video/mp4">
+                    </video>
+                    <span class="custom-play">
+                        <img src="{{ base_path ~ directory }}/img/play-icon.png" alt="">
+                    </span>
+                    <img src="{{ base_path ~ directory }}/img/end-to-end-loog-video.jpg" alt="Banner Bg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+     
+  {% endblock %}
+</div>

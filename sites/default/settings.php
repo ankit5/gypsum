@@ -826,7 +826,7 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
 /*$databases['default']['default'] = array (
-  'database' => 'new_west',
+  'database' => 'new_west3',
   'username' => 'root',
   'password' => 'admin',
   'prefix' => '',

@@ -1,0 +1,29 @@
+<div{{ attributes }}>
+  {{ title_prefix }}
+  {% if label %}
+    <h2 class="visually-hidden"></h2>
+  {% endif %}
+  {{ title_suffix }}
+
+  {% block content %}
+
+
+   
+    
+    <section class="full-w-banner">
+        <div class="bg">
+            <img src="{% spaceless %}{{ content.field_image|escape|striptags('<!-- -->') }}{% endspaceless %}" alt="">
+        </div>
+        <div class="content">
+            <div class="content-wrapper">
+                <div class="max-width">
+                    <h3>{{ label }}</h3>
+                    <p>{{ content.body }}</p>
+                    <a href="{% spaceless %}{{ content.field_url|escape|striptags('<!-- -->') }}{% endspaceless %}" class="btn secondary-btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  {% endblock %}
+</div>

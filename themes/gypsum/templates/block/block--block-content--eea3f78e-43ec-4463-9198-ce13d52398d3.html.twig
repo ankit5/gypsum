@@ -1,0 +1,39 @@
+<div{{ attributes }}>
+   {{ title_prefix }}
+  {% if label %}
+    <h2 class="visually-hidden"></h2>
+  {% endif %}
+  {% block content %}
+
+    <section class="our-process-area">
+        <div class="bg">
+            <img src="{% spaceless %}{{ content.field_image|escape|striptags('<!-- -->') }}{% endspaceless %}" alt="">
+        </div>
+        <div class="container">
+            <h3 class="common-heading">{{ label }}</h3>
+            <p class="common-subHeading">{{ content.body }}</p>
+            <div class="process-lisitng">
+                <div class="process-box">
+                    <img src="{{ base_path ~ directory }}/img/process-1.png" alt="">
+                </div>
+                <div class="process-box">
+                    <img src="{{ base_path ~ directory }}/img/process-2.png" alt="">
+                </div>
+                <div class="process-box">
+                    <img src="{{ base_path ~ directory }}/img/process-3.png" alt="">
+                </div>
+                <div class="process-box">
+                    <img src="{{ base_path ~ directory }}/img/process-4.png" alt="">
+                </div>
+            </div>
+            <p class="btn-row">
+                <a href="{% spaceless %}{{ content.field_url|escape|striptags('<!-- -->') }}{% endspaceless %}" class="btn secondary-btn">Learn More</a>
+            </p>
+        </div>
+    </section>
+
+   
+    
+   
+  {% endblock %}
+</div>
