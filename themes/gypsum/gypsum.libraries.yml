@@ -1,0 +1,12 @@
+# These will be loaded on every pages.
+global-styling:
+  version: VERSION
+  css:
+    component:
+      css/fontawesome-all.min.css: {}
+    theme:
+      css/style.css: {}
+  js:
+    js/gypsum.js: {}
+  dependencies:
+    - core/jquery

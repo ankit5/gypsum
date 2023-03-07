@@ -1,0 +1,184 @@
+{#
+/**
+ * @file
+ * Tara's theme implementation to display front page.
+ *
+ * The doctype, html, head and body tags are not in this template. Instead they
+ * can be found in the html.html.twig template.
+ *
+ */
+#}
+{% include '@gypsum/template-parts/header.html.twig' %}
+
+  {% include '@gypsum/template-parts/slider.html.twig' %}
+
+<div id="main-wrapper" class="main-wrapper">
+
+<section class="full-w-banner">
+        <div class="bg">
+            <img src="{{ base_path ~ directory }}/img/Recycle-bg.jpg" alt="">
+        </div>
+        <div class="content">
+            <div class="content-wrapper">
+                <div class="max-width">
+                    <h3>Recycle The Present, Save The Future.</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                        sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt mollit anim id est laborum.</p>
+                    <a href="" class="btn secondary-btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="our-process-area">
+        <div class="bg">
+            <img src="{{ base_path ~ directory }}/img/our-process-bg.jpg" alt="">
+        </div>
+        <div class="container">
+            <h3 class="common-heading">Our Process</h3>
+            <p class="common-subHeading">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod
+                tempor<br> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis<br>
+                nostrudexercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br> Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu<br> fugiat nulla pariatur. Excepteursint
+                occaecat cupidatat non proident, sunt in<br> culpa qui officiadeserunt mollit anim id est laborum.</p>
+            <div class="process-lisitng">
+                <div class="process-box">
+                    <img src="{{ base_path ~ directory }}/img/process-1.png" alt="">
+                </div>
+                <div class="process-box">
+                    <img src="{{ base_path ~ directory }}/img/process-2.png" alt="">
+                </div>
+                <div class="process-box">
+                    <img src="{{ base_path ~ directory }}/img/process-3.png" alt="">
+                </div>
+                <div class="process-box">
+                    <img src="{{ base_path ~ directory }}/img/process-4.png" alt="">
+                </div>
+            </div>
+            <p class="btn-row">
+                <a href="" class="btn secondary-btn">Learn More</a>
+            </p>
+        </div>
+    </section>
+
+    <section class="full-w-banner reverse">
+        <div class="bg">
+            <img src="{{ base_path ~ directory }}/{{ base_path ~ directory }}/img/Waste-Diversion-bg.jpg" alt="">
+        </div>
+        <div class="content">
+            <div class="content-wrapper">
+                <div class="max-width">
+                    <h3>Waste Diversion The Right Way.</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                        sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt mollit anim id est laborum.</p>
+                    <a href="" class="btn secondary-btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="video-w-content-area">
+        <div class="container">
+            <div class="video-w-content-wrapper">
+                <div class="content">
+                    <h3>An End to End Loop</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                        sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt mollit anim id est laborum.</p>
+                    <a href="" class="btn">Learn More</a>
+                </div>
+                <div class="video-box active" id="videoBox1">
+                    <video id="video1" controls>
+                        <source src="{{ base_path ~ directory }}/img/lorem-psum-video.mp4" type="video/mp4">
+                    </video>
+                    <span class="custom-play">
+                        <img src="{{ base_path ~ directory }}/img/play-icon.png" alt="">
+                    </span>
+                    <img src="{{ base_path ~ directory }}/img/end-to-end-loog-video.jpg" alt="Banner Bg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="full-w-banner">
+        <div class="bg">
+            <img src="{{ base_path ~ directory }}/img/our-promise-bg.jpg" alt="">
+        </div>
+        <div class="content">
+            <div class="content-wrapper">
+                <div class="max-width">
+                    <h3>Our Promise To The Planet.</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                        sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt mollit anim id est laborum.</p>
+                    <a href="" class="btn secondary-btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+      {% if page.content %}
+				{{ page.content }}
+			{% endif %}
+	<section class="choose-counrty-popup">
+        <div class="popup-wrapper">
+            <span class="close">
+                <i class="fal fa-times-circle"></i>
+            </span>
+            <img src="{{ base_path ~ directory }}/img/logo.png" alt="" class="popup-logo">
+            <h3>Choose Your Country</h3>
+            <ul class="popup-counrty-listing">
+                <li>
+                    <a href="" class="uas-c">USA</a>
+                </li>
+                <li>
+                    <a href="./british-columbia.html" class="ca-c">Canada</a>
+                </li>
+                <li>
+                    <a href="./france.html" class="fa-c">France</a>
+                </li>
+                <li>
+                    <a href="./belgium.html" class="be-c">Belgium</a>
+                </li>
+                <li>
+                    <a href="./norway.html" class="no-c">Norway</a>
+                </li>
+                <li>
+                    <a href="./united-kingdom.html" class="uk-c">UK</a>
+                </li>
+                <li>
+                    <a href="./germany.html" class="de-c">Germany</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <i class="scrollup"><i class="fal fa-angle-up"></i></i>
+		
+</div><!-- /main-wrapper -->
+{% include '@gypsum/template-parts/footer.html.twig' %}
