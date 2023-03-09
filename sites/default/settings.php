@@ -836,7 +836,7 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
   'driver' => 'mysql',
   'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
 );*/
-$databases['default']['default'] = array (
+/*$databases['default']['default'] = array (
   'database' => 'ankitver_new_west',
   'username' => 'ankitver_drupal',
   'password' => '8y{a(o-IrhQ~',
@@ -846,5 +846,17 @@ $databases['default']['default'] = array (
   'namespace' => 'Drupal\\mysql\\Driver\\Database\\mysql',
   'driver' => 'mysql',
   'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
+);*/
+$databases['default']['default'] = array (
+  'database' => 'mobilewe_gypsum',
+  'username' => 'mobilewe_gypsum',
+  'password' => 'fb?wU3q@r]a_',
+  'prefix' => '',
+  'host' => 'localhost',
+  'port' => '3306',
+  'namespace' => 'Drupal\\mysql\\Driver\\Database\\mysql',
+  'driver' => 'mysql',
+  'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
 );
+
 $settings['config_sync_directory'] = 'sites/default/files/config_Bs8As8YREaWB3Nw3-ybe42aBXJ2tqfuZHRvMHuT4p4uFpfs2fjMxjmwuN6BEUAxKoRC-peQQMQ/sync';
