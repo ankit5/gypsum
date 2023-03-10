@@ -903,6 +903,9 @@ footer {
     width: 100%;
     position: relative;
 }
+body {
+    padding: 0 !important;
+}
 
 .btn {
     display: inline-block;
